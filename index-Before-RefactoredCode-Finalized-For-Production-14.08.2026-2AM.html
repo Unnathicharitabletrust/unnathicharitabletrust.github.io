@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YV20GR32KM"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YV20GR32KM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-      gtag('config', 'G-YV20GR32KM');
-    </script>
+  gtag('config', 'G-YV20GR32KM');
+</script>
     <meta charset="UTF-8">
     <title>Unnathi Charitable Trust (R.)</title>
 
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
 	
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Unnathi Charitable Trust - Believe to Achieve. Empowering education and supporting students in need.">
@@ -251,19 +251,19 @@
             color: var(--brand-yellow);
         }
 
-        .social-btn {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(255, 255, 255, 0.1);
-            color: #ffffff;
-            margin-right: 10px;
-            font-size: 1.2rem;
-            transition: all 0.3s ease;
-        }
+	  .social-btn {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		background: rgba(255, 255, 255, 0.1); /* Very light / transparent background */
+		color: #ffffff;                        /* White icon color */
+		margin-right: 10px;
+		font-size: 1.2rem;
+		transition: all 0.3s ease;
+	}
 
         .social-btn:hover {
             background: var(--brand-orange);
@@ -271,29 +271,51 @@
             transform: scale(1.1);
         }
 
-        .social-btn-brand {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            color: #ffffff !important;
-            margin-right: 10px;
-            font-size: 1.2rem;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
 
-        .social-btn-brand.facebook { background-color: #1877F2; }
-        .social-btn-brand.instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
-        .social-btn-brand.youtube { background-color: #FF0000; }
+/* Specific styling for social buttons on LIGHT backgrounds (e.g. Contact Section) */
+.social-btn-dark {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand-green) !important; /* Visible Green Circle */
+    color: #ffffff !important;                       /* White Icon */
+    margin-right: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
 
-        .social-btn-brand:hover {
-            transform: scale(1.1);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
+.social-btn-dark:hover {
+    background-color: var(--brand-orange) !important; /* Turns Orange on Hover */
+    color: #ffffff !important;
+    transform: scale(1.1);
+}
 
+.social-btn-brand {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff !important;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-btn-brand.facebook { background-color: #1877F2; }
+.social-btn-brand.instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+.social-btn-brand.youtube { background-color: #FF0000; }
+
+.social-btn-brand:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
         /* Language Switcher Styling */
         .lang-switch {
             cursor: pointer;
@@ -349,6 +371,9 @@
                     <li class="nav-item"><a class="nav-link" href="#vision" data-i18n="nav_vision">Aspiration & Purpose</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav_about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+                   <!-- 
+				    <li class="nav-item"><a class="nav-link" href="#memories" data-i18n="nav_memories">Memories</a></li>
+					-->
                     <li class="nav-item"><a class="nav-link" href="#events" data-i18n="nav_events">Events</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav_contact">Contact</a></li>
                 </ul>
@@ -464,7 +489,7 @@
             <h2 class="text-center section-title" data-i18n="title_about">About Unnathi Charitable Trust</h2>
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
-                    <img src="begin.jpeg" alt="Unnathi Card" class="img-fluid rounded-4 shadow-lg" loading="lazy">
+                    <img src="begin.jpeg" alt="Unnathi Card" class="img-fluid rounded-4 shadow-lg">
                 </div>
                 <div class="col-lg-6">
                     <h3 class="fw-bold mb-3 text-success" data-i18n="about_heading">Serving Society for 5 Continuous Years</h3>
@@ -523,6 +548,7 @@
                     <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
                     <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
                     <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+					
                     <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
                     <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
                     <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="12" aria-label="Slide 13"></button>
@@ -530,156 +556,188 @@
                     <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="14" aria-label="Slide 15"></button>
                     <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="15" aria-label="Slide 16"></button>
                     <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="16" aria-label="Slide 17"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="18" aria-label="Slide 18"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="19" aria-label="Slide 19"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="20" aria-label="Slide 20"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="21" aria-label="Slide 21"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="22" aria-label="Slide 22"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="23" aria-label="Slide 23"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="24" aria-label="Slide 24"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="25" aria-label="Slide 25"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="26" aria-label="Slide 26"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="27" aria-label="Slide 27"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="28" aria-label="Slide 28"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="29" aria-label="Slide 29"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="30" aria-label="Slide 30"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="31" aria-label="Slide 31"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="32" aria-label="Slide 32"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="33" aria-label="Slide 33"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="34" aria-label="Slide 34"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="35" aria-label="Slide 35"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="17" aria-label="Slide 18"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="18" aria-label="Slide 19"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="19" aria-label="Slide 20"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="20" aria-label="Slide 21"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="21" aria-label="Slide 22"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="22" aria-label="Slide 23"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="23" aria-label="Slide 24"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="24" aria-label="Slide 25"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="25" aria-label="Slide 26"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="26" aria-label="Slide 27"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="27" aria-label="Slide 28"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="28" aria-label="Slide 29"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="29" aria-label="Slide 30"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="30" aria-label="Slide 31"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="31" aria-label="Slide 32"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="32" aria-label="Slide 33"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="33" aria-label="Slide 34"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="34" aria-label="Slide 35"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="35" aria-label="Slide 36"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="36" aria-label="Slide 37"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="37" aria-label="Slide 38"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="38" aria-label="Slide 39"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="39" aria-label="Slide 40"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="40" aria-label="Slide 41"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="41" aria-label="Slide 42"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="42" aria-label="Slide 43"></button>
+		
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="4000">
-                        <img src="group1.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 1" loading="lazy">
+                        <img src="group1.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 1">
                         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                             <h5>Educational Initiatives</h5>
                             <p>Supporting students across schools in Karkala Taluk.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="4000">
-                        <img src="group2.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 2" loading="lazy">
+                        <img src="group2.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 2">
                         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                             <h5>Community Empowerment</h5>
                             <p>First Year, Bringing society together for meaningful change.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="4000">
-                        <img src="group3.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 3" loading="lazy">
+                        <img src="group3.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 3">
                         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                             <h5>Community Empowerment</h5>
                             <p>Second Year, Bringing society together for meaningful change.</p>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="group4.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 4" loading="lazy">
+					 <div class="carousel-item" data-bs-interval="4000">
+                        <img src="group4.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 4">
                         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                             <h5>Community Empowerment</h5>
                             <p>Third Year, Bringing society together for meaningful change.</p>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="group5.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 5" loading="lazy">
+					 <div class="carousel-item" data-bs-interval="4000">
+                        <img src="group5.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 5">
                         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                             <h5>Honoring Achievers & Heroes</h5>
                             <p>Recognizing servicemen, achievers, and meritorious students.</p>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="kabbinale.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 6" loading="lazy">
+				<div class="carousel-item" data-bs-interval="4000">
+                        <img src="kabbinale.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 6">
                         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                             <h5>Kabbinale</h5>
                             <p>Recognizing servicemen, achievers, and meritorious students.</p>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="BloodCampWithANFkarkala.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 7" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="BloodCampWithANFkarkala.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 7">
                         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                             <h5>Karkala</h5>
                             <p>Blood camp association with ANF karkala</p>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-8.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 1" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-8.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 1">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-2.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 2" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-2.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 2">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-3.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 3" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-3.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 3">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-4.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 4" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-4.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 4">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-43.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 5" loading="lazy">
+					
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-43.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 5">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-6.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 6" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-6.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 6">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-22.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 7" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-22.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 7">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-42.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 8" loading="lazy">
+					
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-42.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 8">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-41.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 10" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-3.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 9">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-40.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 11" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-41.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 10">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-39.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 12" loading="lazy">
+					
+					
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-40.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 11">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-38.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 13" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-39.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 12">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-37.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 14" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-38.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 13">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-23.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 15" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-37.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 14">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-35.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 16" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-23.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 15">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-17.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 17" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-35.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 16">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-18.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 18" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-17.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 17">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-20.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 20" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-18.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 18">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-21.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 21" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-8.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 19">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-24.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 24" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-20.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 20">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-25.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 25" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-21.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 21">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-26.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 26" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-22.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 22">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-28.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 27" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-23.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 23">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-29.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 29" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-24.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 24">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-30.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 30" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-25.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 25">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-27.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 33" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-26.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 26">
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="memories-34.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 34" loading="lazy">
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-28.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 27">
                     </div>
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-29.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 29">
+                    </div>
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-30.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 30">
+                    </div>
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-20.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 31">
+                    </div>
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-24.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 32">
+                    </div>
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-27.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 33">
+                    </div>
+					<div class="carousel-item" data-bs-interval="4000">
+                        <img src="memories-34.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo m 34">
+                    </div>
+					
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -703,7 +761,7 @@
                 <!-- Memory Item 1 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card card-custom">
-                        <img src="milestone1.jpg" alt="Scholarship Drive" class="card-img-top memory-img" loading="lazy">
+                        <img src="milestone1.jpg" alt="Scholarship Drive" class="card-img-top memory-img">
                         <div class="card-body p-4">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <span class="badge bg-success-subtle text-success border border-success px-2 py-1" data-i18n="m1_occasion">Scholarship Drive</span>
@@ -721,7 +779,7 @@
                 <!-- Memory Item 2 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card card-custom">
-                        <img src="milestone2.jpeg" alt="School Support" class="card-img-top memory-img" loading="lazy">
+                        <img src="milestone2.jpeg" alt="School Support" class="card-img-top memory-img">
                         <div class="card-body p-4">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <span class="badge bg-warning-subtle text-warning-emphasis border border-warning px-2 py-1" data-i18n="m2_occasion">Independence Day</span>
@@ -739,7 +797,7 @@
                 <!-- Memory Item 3 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card card-custom">
-                        <img src="milestone3.jpeg" alt="Felicitation Program" class="card-img-top memory-img" loading="lazy">
+                        <img src="milestone3.jpeg" alt="Felicitation Program" class="card-img-top memory-img">
                         <div class="card-body p-4">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <span class="badge bg-info-subtle text-info-emphasis border border-info px-2 py-1" data-i18n="m3_occasion">Hero Felicitation</span>
@@ -808,18 +866,18 @@
                             </div>
                         </div>
 						
-                        <div class="d-flex align-items-start mb-3">
+						<div class="d-flex align-items-start mb-3">
                             <i class="fa-solid fa-phone text-warning fs-5 me-3 mt-1"></i>
                             <div>
-                                <h6 class="fw-bold mb-0" data-i18n="contact_mobile_title">Mobile</h6>
+								<h6 class="fw-bold mb-0" data-i18n="contact_mobile_title">Mobile</h6>
                                 <p class="text-secondary mb-0">+91 9980760799/9686296914</p>
                             </div>
                         </div>
 						
-                        <div class="d-flex align-items-start mb-3">
+						<div class="d-flex align-items-start mb-3">
                             <i class="fa-solid fa-envelope text-warning fs-5 me-3 mt-1"></i>
                             <div>
-                                <h6 class="fw-bold mb-0" data-i18n="contact_email_title">Email</h6>
+								<h6 class="fw-bold mb-0" data-i18n="contact_email_title">Email</h6>
                                 <p class="text-secondary mb-0">unnathicharitabletrust01@gmail.com</p>
                             </div>
                         </div>
@@ -828,11 +886,11 @@
                             <i class="fa-solid fa-share-nodes text-warning fs-5 me-3 mt-1"></i>
                             <div>
                                 <h6 class="fw-bold mb-0" data-i18n="contact_social_title">Follow Our Activities</h6>
-                                <div class="mt-2">
-                                    <a href="https://www.facebook.com/profile.php?id=100077579769599&sfnsn=wa" target="_blank" class="social-btn-brand facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="https://www.instagram.com/team_unnathi?utm_source=qr&igsh=dDhieHptZjNsMHJk" target="_blank" class="social-btn-brand instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="https://youtu.be/4VTITsyEp1g?si=T8HcisrJYQbz_4oj" target="_blank" class="social-btn-brand youtube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                                </div>
+                               <div class="mt-2">
+    <a href="https://www.facebook.com/profile.php?id=100077579769599&sfnsn=wa" target="_blank" class="social-btn-brand facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/team_unnathi?utm_source=qr&igsh=dDhieHptZjNsMHJk" target="_blank" class="social-btn-brand instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://youtu.be/4VTITsyEp1g?si=T8HcisrJYQbz_4oj" target="_blank" class="social-btn-brand youtube"><i class="fa-brands fa-youtube"></i></a>
+</div>
                             </div>
                         </div>
                     </div>
@@ -892,9 +950,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h6 class="text-white fw-bold mb-3" data-i18n="footer_connect">Connect Socially</h6>
-                    <a href="https://www.facebook.com/profile.php?id=100077579769599&sfnsn=wa" target="_blank" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/team_unnathi?utm_source=qr&igsh=dDhieHptZjNsMHJk" target="_blank" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a> 
-                    <a href="https://youtu.be/4VTITsyEp1g?si=T8HcisrJYQbz_4oj" target="_blank" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a> 
+                    <a href="https://www.facebook.com/profile.php?id=100077579769599&sfnsn=wa" target="_blank" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/team_unnathi?utm_source=qr&igsh=dDhieHptZjNsMHJk" target="_blank" class="social-btn"><i class="fa-brands fa-instagram"></i></a> 
+                    <a href="https://youtu.be/4VTITsyEp1g?si=T8HcisrJYQbz_4oj" target="_blank" class="social-btn"><i class="fa-brands fa-youtube"></i></a> 
                 </div>
             </div>
             <hr class="border-secondary">
@@ -932,8 +990,10 @@
                         <p class="mb-1"><strong>Bank Name:</strong> Canara Bank</p>
                         <p class="mb-1"><strong>Account Number:</strong> 110071479763</p>
                         <p class="mb-1"><strong>IFSC Code:</strong> CNRB0005266</p>
-                        <p class="mb-1"><strong>UPI ID:</strong> 312585793479763@cnrb</p>
-                        <p class="mb-0 mt-2"><strong>Contact for Support:</strong> Reach out via Instagram / Phone for queries.</p>
+                        <p class="mb-0"><strong>UPI ID:</strong> 312585793479763@cnrb</p>
+						<p class="mb-2"></p>
+						<p class="mb-0"><strong>Contact for Support:</strong> Reach out via Instagram / Phone for queries.</p>
+
                     </div>
                     
                     <a href="https://www.instagram.com/team_unnathi?utm_source=qr&igsh=dDhieHptZjNsMHJk" target="_blank" class="btn btn-brand w-100">
