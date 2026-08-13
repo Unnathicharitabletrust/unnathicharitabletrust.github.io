@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unnathi Charitable Trust (R.)</title>
+    <meta name="description" content="Unnathi Charitable Trust - Believe to Achieve. Empowering education and supporting students in need.">
+    
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+Kannada:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --brand-green: #206d40;
+            --brand-green-light: #3d9258;
+            --brand-orange: #f28b18;
+            --brand-yellow: #f8be14;
+            --brand-dark: #1e2923;
+            --brand-light: #f4f8f5;
+        }
+
+        body {
+            font-family: 'Poppins', 'Noto Sans Kannada', sans-serif;
+            color: var(--brand-dark);
+            background-color: #ffffff;
+            scroll-behavior: smooth;
+        }
+
+        /* Fixed Navigation Header */
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            padding: 0.6rem 1rem;
+            transition: all 0.3s ease;
+            z-index: 1030;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            width: auto;
+            border-radius: 6px;
+        }
+
+        .nav-link {
+            font-weight: 600;
+            color: var(--brand-dark) !important;
+            margin: 0 4px;
+            padding: 8px 12px;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--brand-orange) !important;
+        }
+
+        /* Mobile Navbar Toggle Button */
+        .navbar-toggler {
+            border: 2px solid var(--brand-green);
+            padding: 4px 8px;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: 0 0 0 0.25rem rgba(32, 109, 64, 0.25);
+        }
+
+        .btn-brand {
+            background-color: var(--brand-orange);
+            color: #ffffff;
+            font-weight: 600;
+            border: none;
+            border-radius: 30px;
+            padding: 8px 22px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-brand:hover {
+            background-color: #d6740b;
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(242, 139, 24, 0.3);
+        }
+
+        .btn-outline-brand {
+            border: 2px solid var(--brand-green);
+            color: var(--brand-green);
+            font-weight: 600;
+            border-radius: 30px;
+            padding: 6px 20px;
+        }
+
+        .btn-outline-brand:hover {
+            background-color: var(--brand-green);
+            color: #ffffff;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, rgba(32, 109, 64, 0.92), rgba(24, 75, 45, 0.88)), url('LOGO.jpg') center/cover no-repeat;
+            color: white;
+            padding: 120px 0 80px 0;
+            position: relative;
+            margin-top: 70px;
+        }
+
+        .hero-quote-box {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(8px);
+            border-left: 5px solid var(--brand-yellow);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        /* Stats Cards */
+        .stat-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 30px 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            border-bottom: 4px solid var(--brand-green);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-card .icon {
+            font-size: 2.5rem;
+            color: var(--brand-orange);
+            margin-bottom: 15px;
+        }
+
+        .stat-card .number {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--brand-green);
+        }
+
+        /* Section Title Style */
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+            font-weight: 700;
+            color: var(--brand-green);
+        }
+
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: var(--brand-orange);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        /* Cards & Features */
+        .card-custom {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .card-custom:hover {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+
+        .bg-light-custom {
+            background-color: var(--brand-light);
+        }
+
+        /* Gallery Carousel Custom Styling */
+        .gallery-carousel-img {
+            height: 450px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        /* Memories Card Image Fix */
+        .memory-img {
+            height: 220px;
+            object-fit: cover;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        /* Event Banner Card */
+        .event-card {
+            border: 2px dashed var(--brand-orange);
+            background: #fffdf9;
+            border-radius: 15px;
+            padding: 30px;
+        }
+
+        /* QR Code Modal Styling */
+        .qr-card {
+            background: #ffffff;
+            border: 2px dashed var(--brand-green);
+            border-radius: 12px;
+            padding: 15px;
+            display: inline-block;
+        }
+
+        .qr-code-img {
+            max-width: 220px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--brand-dark);
+            color: #dcdcdc;
+            padding-top: 60px;
+            padding-bottom: 20px;
+        }
+
+        footer a {
+            color: #b0b0b0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: var(--brand-yellow);
+        }
+
+	  .social-btn {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		background: rgba(255, 255, 255, 0.1); /* Very light / transparent background */
+		color: #ffffff;                        /* White icon color */
+		margin-right: 10px;
+		font-size: 1.2rem;
+		transition: all 0.3s ease;
+	}
+
+        .social-btn:hover {
+            background: var(--brand-orange);
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+
+
+/* Specific styling for social buttons on LIGHT backgrounds (e.g. Contact Section) */
+.social-btn-dark {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand-green) !important; /* Visible Green Circle */
+    color: #ffffff !important;                       /* White Icon */
+    margin-right: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-btn-dark:hover {
+    background-color: var(--brand-orange) !important; /* Turns Orange on Hover */
+    color: #ffffff !important;
+    transform: scale(1.1);
+}
+
+.social-btn-brand {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff !important;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-btn-brand.facebook { background-color: #1877F2; }
+.social-btn-brand.instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+.social-btn-brand.youtube { background-color: #FF0000; }
+
+.social-btn-brand:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+        /* Language Switcher Styling */
+        .lang-switch {
+            cursor: pointer;
+            font-weight: bold;
+            border: 1px solid var(--brand-green);
+            border-radius: 20px;
+            padding: 3px 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Mobile Dropdown Styling Fixes */
+        @media (max-width: 991px) {
+            .hero-section {
+                padding: 100px 0 60px 0;
+            }
+            .navbar-collapse {
+                background: #ffffff;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                margin-top: 10px;
+            }
+            .gallery-carousel-img {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100">
+
+    <!-- ================= FIXED HEADER ================= -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="https://unnathicharitabletrust.org/">
+                <img src="LOGO.jpg" alt="Team Unnathi Logo">
+                <div class="d-none d-sm-block">
+                    <span class="fw-bold d-block text-success" style="font-size: 1.1rem; color: var(--brand-green) !important;">Unnathi Charitable Trust</span>
+                    <small class="text-muted" style="font-size: 0.75rem;">Believe to Achieve...</small>
+                </div>
+            </a>
+
+            <!-- Mobile Navbar Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Navigation Menu Items -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home" data-i18n="nav_home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#vision" data-i18n="nav_vision">Aspiration & Purpose</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav_about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+                   <!-- 
+				    <li class="nav-item"><a class="nav-link" href="#memories" data-i18n="nav_memories">Memories</a></li>
+					-->
+                    <li class="nav-item"><a class="nav-link" href="#events" data-i18n="nav_events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+                
+                <div class="d-flex align-items-center justify-content-center gap-2 ms-lg-3 mt-3 mt-lg-0">
+                    <!-- Language Selector Button -->
+                    <button type="button" class="btn btn-sm btn-outline-brand lang-switch" onclick="toggleLanguage()">
+                        <i class="fa-solid fa-globe"></i>
+                        <span id="langLabel">ಕನ್ನಡ</span>
+                    </button>
+                    <!-- Donation Trigger Button -->
+                    <button type="button" class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#donateModal" data-i18n="nav_donate">Donate</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="hero-section text-center text-lg-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-bold" data-i18n="hero_badge">Registered Charitable Trust - Karkala</span>
+                    <h1 class="display-4 fw-bold mb-3" data-i18n="hero_title">Unnathi Charitable Trust (R.)</h1>
+                    <p class="lead mb-4 text-warning fw-bold" data-i18n="hero_tagline">"Believe to Achieve..."</p>
+                    
+                    <div class="hero-quote-box text-start">
+                        <i class="fa-solid fa-quote-left fs-3 text-warning mb-2"></i>
+                        <p class="fs-5 italic mb-0" data-i18n="hero_quote">
+                            "A single morsel fed to the hunger of education is the most noble deed of all. Our primary goal is to ensure no student is deprived of education due to financial hardship."
+                        </p>
+                    </div>
+
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#events" class="btn btn-brand btn-lg" data-i18n="btn_events">View 5th Year Celebration</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill" data-i18n="btn_join">Join Hands With Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= IMPACT STATS ================= -->
+    <section class="py-5 bg-light-custom">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <i class="fa-solid fa-user-graduate icon"></i>
+                        <div class="number">92+</div>
+                        <div class="text-muted fw-semibold" data-i18n="stat_1">Students Supported</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <i class="fa-solid fa-indian-rupee-sign icon"></i>
+                        <div class="number">₹5.47L+</div>
+                        <div class="text-muted fw-semibold" data-i18n="stat_2">Scholarships Granted</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <i class="fa-solid fa-school icon"></i>
+                        <div class="number">₹58,000+</div>
+                        <div class="text-muted fw-semibold" data-i18n="stat_3">Govt School Support</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <i class="fa-solid fa-calendar-check icon"></i>
+                        <div class="number">5 Years</div>
+                        <div class="text-muted fw-semibold" data-i18n="stat_4">Of Dedicated Service</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= VISION & MISSION ================= -->
+    <section id="vision" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title" data-i18n="title_vision">Aspiration & Purpose</h2>
+            <div class="row g-4 mt-2">
+                <div class="col-md-6">
+                    <div class="card card-custom p-4 border-start border-success border-5">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-eye fs-2 text-success me-3"></i>
+                            <h3 class="h4 mb-0 fw-bold" data-i18n="vision_head">Our Aspiration</h3>
+                        </div>
+                        <p class="text-secondary" data-i18n="vision_desc">
+                            Educated and cultured training is the ultimate remedy for every challenge in the world. We envision an equitable society where financial struggles never block a child's right to complete education and build a brighter future.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-custom p-4 border-start border-warning border-5">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-bullseye fs-2 text-warning me-3"></i>
+                            <h3 class="h4 mb-0 fw-bold" data-i18n="mission_head">Our Purpose</h3>
+                        </div>
+                        <p class="text-secondary" data-i18n="mission_desc">
+                            To bring together like-minded individuals who dedicate a portion of their monthly income, skills, and time to provide educational aid, honor national heroes, assist government schools, and encourage local talents.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT US ================= -->
+    <section id="about" class="py-5 bg-light-custom">
+        <div class="container">
+            <h2 class="text-center section-title" data-i18n="title_about">About Unnathi Charitable Trust</h2>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="begin.jpeg" alt="Unnathi Card" class="img-fluid rounded-4 shadow-lg">
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-3 text-success" data-i18n="about_heading">Serving Society for 5 Continuous Years</h3>
+                    <p class="text-secondary" data-i18n="about_p1">
+                        Unnathi Charitable Trust (R.) Karkala was born out of a shared vision by a group of like-minded individuals. Members reserve a fraction of their monthly hard-earned income to uplift underprivileged students and support social welfare projects.
+                    </p>
+                    <p class="text-secondary" data-i18n="about_p2">
+                        Help isn't restricted only to money. We believe collective small steps yield massive results. Anyone can contribute through active participation, time, guidance, or physical effort.
+                    </p>
+                    <div class="row g-3 mt-2">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-check-circle text-success fs-5"></i>
+                                <span class="fw-semibold" data-i18n="about_f1">Financial Assistance</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-check-circle text-success fs-5"></i>
+                                <span class="fw-semibold" data-i18n="about_f2">Direct Volunteering</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-check-circle text-success fs-5"></i>
+                                <span class="fw-semibold" data-i18n="about_f3">Mentorship & Guidance</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-check-circle text-success fs-5"></i>
+                                <span class="fw-semibold" data-i18n="about_f4">Community Service</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= GALLERY SECTION ================= -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title" data-i18n="title_gallery">Our Gallery</h2>
+            <p class="text-center text-muted mb-4" data-i18n="gallery_subtitle">Glance through our key moments, events, and initiatives.</p>
+            
+            <div id="galleryCarousel" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="group1.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 1">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>Educational Initiatives</h5>
+                            <p>Supporting students across schools in Karkala Taluk.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="group2.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 2">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>Community Empowerment</h5>
+                            <p>First Year, Bringing society together for meaningful change.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="group3.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 3">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>Community Empowerment</h5>
+                            <p>Second Year, Bringing society together for meaningful change.</p>
+                        </div>
+                    </div>
+					 <div class="carousel-item" data-bs-interval="4000">
+                        <img src="group4.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 3">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>Community Empowerment</h5>
+                            <p>Third Year, Bringing society together for meaningful change.</p>
+                        </div>
+                    </div>
+					 <div class="carousel-item" data-bs-interval="4000">
+                        <img src="group5.jpeg" class="d-block w-100 gallery-carousel-img" alt="Gallery Photo 3">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>Honoring Achievers & Heroes</h5>
+                            <p>Recognizing servicemen, achievers, and meritorious students.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= MEMORIES & JOURNEY SECTION ================= -->
+    <section id="memories" class="py-5 bg-light-custom">
+        <div class="container">
+            <h2 class="text-center section-title" data-i18n="title_memories">Our Journey & Memories</h2>
+            <p class="text-center text-muted mb-5" data-i18n="memories_subtitle">A look back at moments that shaped our mission and touched lives.</p>
+
+            <div class="row g-4">
+                <!-- Memory Item 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-custom">
+                        <img src="milestone1.jpg" alt="Scholarship Drive" class="card-img-top memory-img">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success-subtle text-success border border-success px-2 py-1" data-i18n="m1_occasion">Scholarship Drive</span>
+                                <small class="text-muted"><i class="fa-regular fa-calendar me-1"></i>2021</small>
+                            </div>
+                            <h5 class="card-title fw-bold text-dark" data-i18n="m1_title">First Major Student Support</h5>
+                            <p class="card-text text-secondary small" data-i18n="m1_desc">Distribution of initial scholarships to students in local schools during the Trust's foundational days.</p>
+                            <div class="text-muted small border-top pt-2 mt-3">
+                                <i class="fa-solid fa-location-dot me-1 text-danger"></i> <span data-i18n="m1_place">Karkala Taluk</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Memory Item 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-custom">
+                        <img src="milestone2.jpeg" alt="School Support" class="card-img-top memory-img">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning-subtle text-warning-emphasis border border-warning px-2 py-1" data-i18n="m2_occasion">Independence Day</span>
+                                <small class="text-muted"><i class="fa-regular fa-calendar me-1"></i>15 Aug 2023</small>
+                            </div>
+                            <h5 class="card-title fw-bold text-dark" data-i18n="m2_title">Govt School Infrastructure Aid</h5>
+                            <p class="card-text text-secondary small" data-i18n="m2_desc">Providing essential educational equipment and infrastructure support to government schools in rural areas.</p>
+                            <div class="text-muted small border-top pt-2 mt-3">
+                                <i class="fa-solid fa-location-dot me-1 text-danger"></i> <span data-i18n="m2_place">Karkala</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Memory Item 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-custom">
+                        <img src="milestone3.jpeg" alt="Felicitation Program" class="card-img-top memory-img">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-info-subtle text-info-emphasis border border-info px-2 py-1" data-i18n="m3_occasion">Hero Felicitation</span>
+                                <small class="text-muted"><i class="fa-regular fa-calendar me-1"></i>15 Aug 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold text-dark" data-i18n="m3_title">Honoring Servicemen</h5>
+                            <p class="card-text text-secondary small" data-i18n="m3_desc">Felicitating Army soldiers and Police personnel to appreciate their noble service to the nation.</p>
+                            <div class="text-muted small border-top pt-2 mt-3">
+                                <i class="fa-solid fa-location-dot me-1 text-danger"></i> <span data-i18n="m3_place">Kabbinale</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= EVENTS SECTION ================= -->
+    <section id="events" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title" data-i18n="title_events">Events & Celebrations</h2>
+            
+            <div class="event-card mb-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <span class="badge bg-danger mb-2" data-i18n="event_badge">Upcoming Special Event - August 15th</span>
+                        <h3 class="fw-bold text-dark" data-i18n="event_title">Independence Day & 5th Year Anniversary Celebration</h3>
+                        <p class="text-muted mb-2"><i class="fa-solid fa-location-dot text-danger me-2"></i><strong>Bailoor, Karkala Taluk</strong></p>
+                        <p class="text-secondary" data-i18n="event_desc">
+                            Every year on Independence Day, Team Unnathi celebrates in local government schools across Karkala. This 5th-year milestone event features:
+                        </p>
+                        <ul class="list-unstyled text-secondary">
+                            <li><i class="fa-solid fa-star text-warning me-2"></i><span data-i18n="event_i1">Scholarship distribution of ₹5,000 each for 30 deserving students (Total ₹1,50,000).</span></li>
+                            <li><i class="fa-solid fa-star text-warning me-2"></i><span data-i18n="event_i2">Honoring 10 prominent local achievers from various fields.</span></li>
+                            <li><i class="fa-solid fa-star text-warning me-2"></i><span data-i18n="event_i3">Felicitation of SSLC & PUC distinction rank holders from Government Schools.</span></li>
+                            <li><i class="fa-solid fa-star text-warning me-2"></i><span data-i18n="event_i4">Honoring Army Soldiers & Police personnel for exemplary service.</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 text-center mt-3 mt-lg-0">
+                        <div class="p-3 bg-white rounded shadow-sm border">
+                            <h4 class="text-success fw-bold" data-i18n="event_date_title">5th Year Milestones</h4>
+                            <p class="display-6 fw-bold text-warning mb-0">30</p>
+                            <small class="text-muted d-block mb-3" data-i18n="event_scholars">Scholarships Awarded</small>
+                            <button type="button" class="btn btn-brand w-100" data-bs-toggle="modal" data-bs-target="#donateModal" data-i18n="btn_sponsor_child">Sponsor a Student</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT US ================= -->
+    <section id="contact" class="py-5 bg-light-custom">
+        <div class="container">
+            <h2 class="text-center section-title" data-i18n="title_contact">Contact Us</h2>
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <div class="card card-custom p-4">
+                        <h4 class="fw-bold mb-4 text-success" data-i18n="contact_info_head">Get In Touch</h4>
+                        
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fa-solid fa-location-dot text-warning fs-5 me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-bold mb-0" data-i18n="contact_address_title">Address</h6>
+                                <p class="text-secondary mb-0">Unnathi Charitable Trust (R.), 234(1) Attur Post, Nitte Village Karkala Taluk, Udupi District, Karnataka. 576117</p>
+                            </div>
+                        </div>
+						
+						<div class="d-flex align-items-start mb-3">
+                            <i class="fa-solid fa-phone text-warning fs-5 me-3 mt-1"></i>
+                            <div>
+								<h6 class="fw-bold mb-0" data-i18n="contact_mobile_title">Mobile</h6>
+                                <p class="text-secondary mb-0">+91 9980760799/9686296914</p>
+                            </div>
+                        </div>
+						
+						<div class="d-flex align-items-start mb-3">
+                            <i class="fa-solid fa-envelope text-warning fs-5 me-3 mt-1"></i>
+                            <div>
+								<h6 class="fw-bold mb-0" data-i18n="contact_email_title">Email</h6>
+                                <p class="text-secondary mb-0">unnathicharitabletrust01@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fa-solid fa-share-nodes text-warning fs-5 me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-bold mb-0" data-i18n="contact_social_title">Follow Our Activities</h6>
+                               <div class="mt-2">
+    <a href="https://www.facebook.com/profile.php?id=100077579769599&sfnsn=wa" target="_blank" class="social-btn-brand facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/team_unnathi?utm_source=qr&igsh=dDhieHptZjNsMHJk" target="_blank" class="social-btn-brand instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://youtu.be/4VTITsyEp1g?si=T8HcisrJYQbz_4oj" target="_blank" class="social-btn-brand youtube"><i class="fa-brands fa-youtube"></i></a>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="card card-custom p-4">
+                        <h4 class="fw-bold mb-3 text-success" data-i18n="contact_form_title">Send Us a Message</h4>
+                        <form action="https://formspree.io/f/mjybrdlb" method="POST" id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control" rows="4" placeholder="How would you like to contribute or query?" required></textarea>
+                                </div>
+                                <!-- Prevents Spam Bot Submissions -->
+                                <input type="hidden" name="_subject" value="New Website Inquiry - Team Unnathi">
+                                
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-brand w-100" data-i18n="btn_send">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="LOGO.jpg" alt="Logo" style="height: 40px; border-radius: 4px;">
+                        <h5 class="text-white fw-bold mb-0">Unnathi Charitable Trust</h5>
+                    </div>
+                    <p class="small text-secondary" data-i18n="footer_about">
+                        A dedicated charitable trust in Karkala aiming to make sure no student drops out of education due to economic hardship.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="text-white fw-bold mb-3" data-i18n="footer_quick_links">Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="#home" data-i18n="nav_home">Home</a></li>
+                        <li class="mb-2"><a href="#about" data-i18n="nav_about">About Us</a></li>
+                        <li class="mb-2"><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+                        <li class="mb-2"><a href="#memories" data-i18n="nav_memories">Memories</a></li>
+                        <li class="mb-2"><a href="#events" data-i18n="nav_events">Events</a></li>
+                        <li class="mb-2"><a href="#contact" data-i18n="nav_contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="text-white fw-bold mb-3" data-i18n="footer_connect">Connect Socially</h6>
+                    <a href="https://www.facebook.com/profile.php?id=100077579769599&sfnsn=wa" target="_blank" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/team_unnathi?utm_source=qr&igsh=dDhieHptZjNsMHJk" target="_blank" class="social-btn"><i class="fa-brands fa-instagram"></i></a> 
+                    <a href="https://youtu.be/4VTITsyEp1g?si=T8HcisrJYQbz_4oj" target="_blank" class="social-btn"><i class="fa-brands fa-youtube"></i></a> 
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center small text-secondary py-2">
+                <p class="mb-0">&copy; 2026 Unnathi Charitable Trust (R.) Karkala. All Rights Reserved.</p>
+                <div>
+                    <a href="#" class="me-3" data-i18n="footer_privacy">Privacy Policy</a>
+                    <a href="#" data-i18n="footer_terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= DONATION MODAL WITH QR CODE ================= -->
+    <div class="modal fade" id="donateModal" tabindex="-1" aria-labelledby="donateModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title fw-bold" id="donateModalLabel" data-i18n="modal_title">Support Team Unnathi</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <i class="fa-solid fa-hand-holding-heart text-warning display-4 mb-2"></i>
+                    <h5 class="fw-bold mb-1" data-i18n="modal_sub">Your Small Support Creates Big Impact</h5>
+                    <p class="text-muted small mb-3" data-i18n="modal_desc">Scan the QR code below using Google Pay, PhonePe, Paytm or any UPI app.</p>
+
+                    <div class="qr-card shadow-sm mb-3">
+                        <img src="unnathiqrcode.jpg" alt="Donate UPI QR Code" class="qr-code-img img-fluid">
+                        <small class="d-block text-muted mt-2 fw-semibold"><i class="fa-solid fa-qrcode me-1 text-success"></i>Scan to Donate</small>
+                    </div>
+
+                    <div class="p-3 bg-light rounded text-start mb-3 border">
+                        <small class="text-muted d-block fw-bold mb-2" data-i18n="modal_bank_info">Bank / Account Details:</small>
+                        <p class="mb-1"><strong>Account Name:</strong> Unnathi Charitable Trust</p>
+                        <p class="mb-1"><strong>Bank Name:</strong> Canara Bank</p>
+                        <p class="mb-1"><strong>Account Number:</strong> 110071479763</p>
+                        <p class="mb-1"><strong>IFSC Code:</strong> CNRB0005266</p>
+                        <p class="mb-0"><strong>UPI ID:</strong> 312585793479763@cnrb</p>
+						<p class="mb-2"></p>
+						<p class="mb-0"><strong>Contact for Support:</strong> Reach out via Instagram / Phone for queries.</p>
+
+                    </div>
+                    
+                    <a href="https://www.instagram.com/team_unnathi?utm_source=qr&igsh=dDhieHptZjNsMHJk" target="_blank" class="btn btn-brand w-100">
+                        <i class="fa-brands fa-instagram me-2"></i>Contact via Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reliable Bootstrap 5.3.3 JS Bundle CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Page Script -->
+    <script>
+        let currentLang = 'en';
+
+        const translations = {
+            en: {
+                nav_home: "Home",
+                nav_vision: "Aspiration & Purpose",
+                nav_about: "About Us",
+                nav_gallery: "Gallery",
+                nav_memories: "Memories",
+                nav_events: "Events",
+                nav_contact: "Contact Us",
+                nav_donate: "Donate",
+                hero_badge: "Registered Charitable Trust - Karkala",
+                hero_title: "Unnathi Charitable Trust (R.)",
+                hero_tagline: '"Believe to Achieve..."',
+                hero_quote: '"A single morsel fed to the hunger of education is the most noble deed of all. Our primary goal is to ensure no student is deprived of education due to financial hardship."',
+                btn_events: "View 5th Year Celebration",
+                btn_join: "Join Hands With Us",
+                stat_1: "Students Supported",
+                stat_2: "Scholarships Granted",
+                stat_3: "Govt School Support",
+                stat_4: "Of Dedicated Service",
+                title_vision: "Aspiration & Purpose",
+                vision_head: "Our Aspiration",
+                vision_desc: "Educated and cultured training is the ultimate remedy for every challenge in the world. We envision an equitable society where financial struggles never block a child's right to complete education and build a brighter future.",
+                mission_head: "Our Purpose",
+                mission_desc: "To bring together like-minded individuals who dedicate a portion of their monthly income, skills, and time to provide educational aid, honor national heroes, assist government schools, and encourage local talents.",
+                title_about: "About Unnathi Charitable Trust",
+                about_heading: "Serving Society for 5 Continuous Years",
+                about_p1: "Unnathi Charitable Trust (R.) Karkala was born out of a shared vision by a group of like-minded individuals. Members reserve a fraction of their monthly hard-earned income to uplift underprivileged students and support social welfare projects.",
+                about_p2: "Help isn't restricted only to money. We believe collective small steps yield massive results. Anyone can contribute through active participation, time, guidance, or physical effort.",
+                about_f1: "Financial Assistance",
+                about_f2: "Direct Volunteering",
+                about_f3: "Mentorship & Guidance",
+                about_f4: "Community Service",
+                title_gallery: "Our Gallery",
+                gallery_subtitle: "Glance through our key moments, events, and initiatives.",
+                title_memories: "Our Journey & Memories",
+                memories_subtitle: "A look back at moments that shaped our mission and touched lives.",
+                m1_occasion: "Scholarship Drive",
+                m1_title: "First Major Student Support",
+                m1_desc: "Distribution of initial scholarships to students in local schools during the Trust's foundational days.",
+                m1_place: "Karkala Taluk",
+                m2_occasion: "Independence Day",
+                m2_title: "Govt School Infrastructure Aid",
+                m2_desc: "Providing essential educational equipment and infrastructure support to government schools in rural areas.",
+                m2_place: "Karkala",
+                m3_occasion: "Hero Felicitation",
+                m3_title: "Honoring Servicemen",
+                m3_desc: "Felicitating Army soldiers and Police personnel to appreciate their noble service to the nation.",
+                m3_place: "Kabbinale",
+                title_events: "Events & Celebrations",
+                event_badge: "Upcoming Special Event - August 15th",
+                event_title: "Independence Day & 5th Year Anniversary Celebration",
+                event_desc: "Every year on Independence Day, Team Unnathi celebrates in local government schools across Karkala. This 5th-year milestone event features:",
+                event_i1: "Scholarship distribution of ₹5,000 each for 30 deserving students (Total ₹1,50,000).",
+                event_i2: "Honoring 10 prominent local achievers from various fields.",
+                event_i3: "Felicitation of SSLC & PUC distinction rank holders from Government Schools.",
+                event_i4: "Honoring Army Soldiers & Police personnel for exemplary service.",
+                event_date_title: "5th Year Milestones",
+                event_scholars: "Scholarships Awarded",
+                btn_sponsor_child: "Sponsor a Student",
+                title_contact: "Contact Us",
+                contact_info_head: "Get In Touch",
+                contact_address_title: "Address",
+                contact_mobile_title: "Mobile",
+                contact_email_title: "Email",
+                contact_social_title: "Follow Our Activities",
+                contact_form_title: "Send Us a Message",
+                btn_send: "Send Message",
+                footer_about: "A dedicated charitable trust in Karkala aiming to make sure no student drops out of education due to economic hardship.",
+                footer_quick_links: "Quick Links",
+                footer_connect: "Connect Socially",
+                footer_privacy: "Privacy Policy",
+                footer_terms: "Terms of Service",
+                modal_title: "Support Team Unnathi",
+                modal_sub: "Your Small Support Creates Big Impact",
+                modal_desc: "Scan the QR code below using Google Pay, PhonePe, Paytm or any UPI app.",
+                modal_bank_info: "Bank / Account Details:"
+            },
+            kn: {
+                nav_home: "ಮುಖಪುಟ",
+                nav_vision: "ಧ್ಯೇಯ ಮತ್ತು ಉದ್ದೇಶ",
+                nav_about: "ನಮ್ಮ ಬಗ್ಗೆ",
+                nav_gallery: "ಗ್ಯಾಲರಿ",
+                nav_memories: "ನೆನಪುಗಳು",
+                nav_events: "ಕಾರ್ಯಕ್ರಮಗಳು",
+                nav_contact: "ಸಂಪರ್ಕಿಸಿ",
+                nav_donate: "ದೇಣಿಗೆ ನೀಡಿ",
+                hero_badge: "ನೋಂದಾಯಿತ ಚಾರಿಟೇಬಲ್ ಟ್ರಸ್ಟ್ - ಕಾರ್ಕಳ",
+                hero_title: "ಉನ್ನತಿ ಚಾರಿಟೇಬಲ್ ಟ್ರಸ್ಟ್ (ರಿ.)",
+                hero_tagline: '"Believe to Achieve..."',
+                hero_quote: '"ವಿದ್ಯೆಯೆಂಬ ಹಸಿವಿಗೆ ನೀಡುವ ಒಂದು ತುತ್ತು ಅತ್ಯಂತ ಶ್ರೇಷ್ಠವಾಗಿರುತ್ತದೆ. ಆರ್ಥಿಕ ಸಂಕಷ್ಟದಿಂದ ಯಾರೂ ಕೂಡ ಶಿಕ್ಷಣದಿಂದ ವಂಚಿತರಾಗಬಾರದು ಎಂಬುವುದೇ ನಮ್ಮ ಮೂಲ ಉದ್ದೇಶ."',
+                btn_events: "5ನೇ ವರ್ಷದ ಸಂಭ್ರಮ ನೋಡಿ",
+                btn_join: "ನಮ್ಮೊಂದಿಗೆ ಕೈಜೋಡಿಸಿ",
+                stat_1: "ನೆರವು ಪಡೆದ ವಿದ್ಯಾರ್ಥಿಗಳು",
+                stat_2: "ವಿದ್ಯಾರ್ಥಿವೇತನ ಮೊತ್ತ",
+                stat_3: "ಸರ್ಕಾರಿ ಶಾಲೆಗೆ ನೀಡಿದ ನೆರವು",
+                stat_4: "ನಿರಂತರ ಸೇವಾ ವರ್ಷಗಳು",
+                title_vision: "ಧ್ಯೇಯ ಮತ್ತು ಉದ್ದೇಶ",
+                vision_head: "ನಮ್ಮ ದೃಷ್ಟಿಕೋನ",
+                vision_desc: "ಜಗತ್ತಿನ ಎಲ್ಲಾ ಸಮಸ್ಯೆಗೆ ಸಂಸ್ಕಾರಯುತ ಶಿಕ್ಷಣವೇ ಮದ್ದು. ಆರ್ಥಿಕ ಸಂಕಷ್ಟದಿಂದ ಕಷ್ಟಪಡುವ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಉತ್ತಮ ಶಿಕ್ಷಣ ಸಿಗುವಂತೆ ಮಾಡುವುದು ನಮ್ಮ ಮೂಲ ಕನಸು.",
+                mission_head: "ನಮ್ಮ ಉದ್ದೇಶ",
+                mission_desc: "ಸಮಾನ ಮನಸ್ಕರ ತಂಡವೊಂದು ಪ್ರತಿ ತಿಂಗಳು ಗಳಿಸುವ ಆದಾಯದಲ್ಲಿ ಒಂದು ಭಾಗವನ್ನು ಸಮಾಜಕ್ಕಾಗಿ ಮೀಸಲಿಟ್ಟು ಶೈეციಕ ಸಹಾಯ, ಯೋಧರಿಗೆ ಸನ್ಮಾನ ಮತ್ತು ಸಮಾಜಮುಖಿ ಕಾರ್ಯಗಳನ್ನು ಮಾಡುವುದು.",
+                title_about: "ಉನ್ನತಿ ಚಾರಿಟೇಬಲ್ ಟ್ರಸ್ಟ್ ಬಗ್ಗೆ",
+                about_heading: "ಕಳೆದ 5 ವರ್ಷಗಳಿಂದ ನಿರಂತರ ಸಮಾಜಮುಖಿ ಸೇವೆ",
+                about_p1: "ಸಮಾನ ಮನಸ್ಕರ ತಂಡವೊಂದು ಸಮಾಜ ಸೇವೆಯ ಉದ್ದೇಶದಿಂದ ಸೇರಿ ಪ್ರಾರಂಭಿಸಿದ ಸಂಸ್ಥೆಯೇ ಉನ್ನತಿ ಚಾರಿಟೇಬಲ್ ಟ್ರಸ್ಟ್ (ರಿ.) ಕಾರ್ಕಳ. ಸದಸ್ಯರು ತಮ್ಮ ಗಳಿಕೆಯ ಒಂದು ಭಾಗವನ್ನು ಸಮಾಜಕ್ಕಾಗಿ ಮೀಸಲಿಡುತ್ತಿದ್ದಾರೆ.",
+                about_p2: "ಸಹಕಾರ ಎಂದರೆ ಕೇವಲ ಹಣ ನೀಡುವುದಲ್ಲ. ಪ್ರತಿಯೊಬ್ಬರೂ ತಮ್ಮ ಸಮಯ, ಸಲಹೆ, ಶ್ರಮ ಅಥವಾ ನೇರ ಭಾಗವಹಿಸುವಿಕೆಯ ಮೂಲಕ ಕೈಜೋಡಿಸಬಹುದು.",
+                about_f1: "ಹಣಕಾಸಿನ ಸಹಾಯ",
+                about_f2: "ನೇರ ಸೇವಾ ಭಾಗವಹಿಸುವಿಕೆ",
+                about_f3: "ಉತ್ತಮ ಸಲಹೆ & ಮಾರ್ಗದರ್ಶನ",
+                about_f4: "ಅಗತ್ಯವಿದ್ದಾಗ ಶ್ರಮದ ಸಹಾಯ",
+                title_gallery: "ಚಿತ್ರಸಂಪುಟ (ಗ್ಯಾಲರಿ)",
+                gallery_subtitle: "ನಮ್ಮ ಪ್ರಮುಖ ಕ್ಷಣಗಳು ಹಾಗೂ ಕಾರ್ಯಕ್ರಮಗಳ ಒಂದು ನೋಟ.",
+                title_memories: "ನಮ್ಮ ಪ್ರಯಾಣ ಮತ್ತು ನೆನಪುಗಳು",
+                memories_subtitle: "ನಮ್ಮ ಜವಾಬ್ದಾರಿ ಮತ್ತು ಸೇವೆಯನ್ನು ಪ್ರತಿಬಿಂಬಿಸುವ ಸುಂದರ ಕ್ಷಣಗಳು.",
+                m1_occasion: "ವಿದ್ಯಾರ್ಥಿವೇತನ ಕಾರ್ಯಕ್ರಮ",
+                m1_title: "ಮೊದಲ ಪ್ರಮುಖ ಶೈಕ್ಷಣಿಕ ನೆರವು",
+                m1_desc: "ಸಂಸ್ಥೆಯ ಆರಂಭಿಕ ದಿನಗಳಲ್ಲಿ ಸ್ಥಳೀಯ ಶಾಲಾ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಶೈಕ್ಷಣಿಕ ಧನಸಹಾಯ ವಿತರಣೆ.",
+                m1_place: "ಕಾರ್ಕಳ ತಾಲೂಕು",
+                m2_occasion: "ಸ್ವಾತಂತ್ರ್ಯ ದಿನಾಚರಣೆ",
+                m2_title: "ಸರ್ಕಾರಿ ಶಾಲೆಗೆ ಮೂಲಸೌಕರ್ಯ ನೆರವು",
+                m2_desc: "ಗ್ರಾಮೀಣ ಭಾಗದ ಸರ್ಕಾರಿ ಶಾಲೆಗಳಿಗೆ ಅಗತ್ಯ ಶೈಕ್ಷಣಿಕ ಸಲಕರಣೆಗಳು ಹಾಗೂ ಮೂಲಸೌಕರ್ಯ ಸಹಾಯ.",
+                m2_place: "ಕಾರ್ಕಳ",
+                m3_occasion: "ಯೋಧರಿಗೆ ಸನ್ಮಾನ",
+                m3_title: "ಯೋಧರಿಗೆ ಗೌರವ",
+                m3_desc: "ನಾಡಿಗಾಗಿ ಸೇವೆ ಸಲ್ಲಿಸಿದ  ಯೋಧರು ಹಾಗೂ ಪೊಲೀಸ್ ಸಿಬ್ಬಂದಿಗೆ ಗೌರವ ಸನ್ಮಾನ.",
+                m3_place: "ಕಬ್ಬಿನಾಲೆ",
+                title_events: "ಕಾರ್ಯಕ್ರಮಗಳು ಮತ್ತು ಆಚರಣೆಗಳು",
+                event_badge: "ವಿಶೇಷ ಕಾರ್ಯಕ್ರಮ - ಆಗಸ್ಟ್ 15",
+                event_title: "ಸ್ವಾತಂತ್ರ್ಯ ದಿನಾಚರಣೆ ಹಾಗೂ 5ನೇ ವರ್ಷದ ಸಂಭ್ರಮಾಚರಣೆ",
+                event_desc: "ಈ ವರ್ಷ ಕಾರ್ಕಳ ತಾಲೂಕಿನ ಬೈಲೂರಿನಲ್ಲಿ ಸ್ವತಂತ್ರ ದಿನಾಚರಣೆ ಹಾಗೂ ಉನ್ನತಿ ತಂಡದ 5ನೇ ವರ್ಷದ ಸಂಭ್ರಮ ಆಚರಣೆಯನ್ನು ಆಯೋಜಿಸಲಾಗಿದೆ:",
+                event_i1: "30 ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ತಲಾ ₹5000 ರಂತೆ ವಿದ್ಯಾರ್ಥಿವೇತನ (ಒಟ್ಟು ₹1,50,000).",
+                event_i2: "ಆ ಭಾಗದ 10 ಜನ ಸಾಧಕರನ್ನು ಗುರುತಿಸಿ ಸನ್ಮಾನ.",
+                event_i3: "ಸರ್ಕಾರಿ ಶಾಲೆಯ SSLC ಮತ್ತು PUC ವಿಶಿಷ್ಟ ಶ್ರೇಣಿಯ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಸನ್ಮಾನ.",
+                event_i4: "ದೇಶಕ್ಕಾಗಿ ಸೇವೆ ಸಲ್ಲಿಸಿದ  ಯೋಧರು ಹಾಗೂ  ಪೋಲಿಸ್ ಸಿಬ್ಬಂದಿಗೆ ಗೌರವ.",
+                event_date_title: "5 ವರ್ಷಗಳ ಮೈಲಿಗಲ್ಲು",
+                event_scholars: "ವಿದ್ಯಾರ್ಥಿವೇತನ",
+                btn_sponsor_child: "ವಿದ್ಯಾರ್ಥಿಗೆ ನೆರವಾಗಿ",
+                title_contact: "ಸಂಪರ್ಕಿಸಿ",
+                contact_info_head: "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಲು",
+                contact_address_title: "ವಿಳಾಸ",
+                contact_mobile_title: "ಮೊಬೈಲ್",
+                contact_email_title: "ಇಮೇಲ್",
+                contact_social_title: "ಸಾಮಾಜಿಕ ಜಾಲತಾಣಗಳಲ್ಲಿ ಫಾಲೋ ಮಾಡಿ",
+                contact_form_title: "ಸಂದೇಶ ಕಳುಹಿಸಿ",
+                btn_send: "ಸಂದೇಶ ಕಳುಹಿಸಿ",
+                footer_about: "ಆರ್ಥಿಕ ಸಂಕಷ್ಟದಿಂದ ಯಾರೂ ಶಿಕ್ಷಣದಿಂದ ವಂಚಿತರಾಗಬಾರದು ಎಂಬ ಉದ್ದೇಶದೊಂದಿಗೆ ಶ್ರಮಿಸುತ್ತಿರುವ ಸಂಸ್ಥೆ.",
+                footer_quick_links: "ತ್ವರಿತ ಲಿಂಕ್‌ಗಳು",
+                footer_connect: "ಸಾಮಾಜಿಕ ಸಂಪರ್ಕ",
+                footer_privacy: "ಗೌಪ್ಯತಾ ನೀತಿ",
+                footer_terms: "ನಿಯಮಗಳು",
+                modal_title: "ಉನ್ನತಿ ತಂಡಕ್ಕೆ ನೆರವಾಗಿ",
+                modal_sub: "ನಿಮ್ಮ ಸಣ್ಣ ಸಹಾಯ ದೊಡ್ಡ ಬದಲಾವಣೆಗೆ ನಾಂದಿ",
+                modal_desc: "ಖಾತೆಗೆ ಪಾವತಿಸಲು ಕೆಳಗಿನ QR ಕೋಡ್ ಅನ್ನು Google Pay, PhonePe, Paytm ಮೂಲಕ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ.",
+                modal_bank_info: "ಬ್ಯಾಂಕ್ / ಖಾತೆಯ ವಿವರಗಳು:"
+            }
+        };
+
+        function toggleLanguage() {
+            currentLang = (currentLang === 'en') ? 'kn' : 'en';
+            document.getElementById('langLabel').innerText = (currentLang === 'en') ? 'ಕನ್ನಡ' : 'English';
+            
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[currentLang][key]) {
+                    element.innerText = translations[currentLang][key];
+                }
+            });
+        }
+
+        // Auto-collapse mobile navigation menu when clicking a link
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            link.addEventListener('click', function () {
+                // Set active link highlight
+                document.querySelectorAll('.navbar-nav .nav-link').forEach(nav => nav.classList.remove('active'));
+                this.classList.add('active');
+
+                const navbarCollapse = document.getElementById('navbarContent');
+                if (navbarCollapse.classList.contains('show')) {
+                    const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse);
+                    bsCollapse.hide();
+                }
+            });
+        });
+
+        // Initialize Bootstrap ScrollSpy to dynamically highlight active nav tab on scroll
+        document.addEventListener('DOMContentLoaded', function () {
+            var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+                target: '#mainNavbar',
+                offset: 100
+            });
+        });
+    </script>
+</body>
+</html>
