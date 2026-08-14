@@ -12,202 +12,202 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
     <style>
-    :root {
-        --brand-green: #206d40;
-        --brand-green-dark: #184b2d;
-        --brand-orange: #f28b18;
-        --brand-gold: #d4af37;
-        --brand-dark: #1e2923;
-    }
-
-    body {
-        font-family: 'Poppins', sans-serif;
-        background-color: #f4f7f5;
-        color: var(--brand-dark);
-        margin: 0;
-        padding: 20px 0;
-    }
-
-    /* Top Control Box for Quick Editing (Hidden in Print) */
-    .editor-control-panel {
-        background: #ffffff;
-        border-radius: 12px;
-        padding: 20px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        max-width: 900px;
-        margin: 0 auto 30px auto;
-        border-left: 5px solid var(--brand-green);
-    }
-
-    /* Certificate Main Wrapper */
-    .certificate-container {
-        width: 900px;
-        min-height: 630px;
-        margin: 0 auto;
-        background: #ffffff;
-        padding: 25px;
-        position: relative;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-        border-radius: 10px;
-        box-sizing: border-box;
-    }
-
-    /* Fancy Double Border Frame */
-    .certificate-border {
-        border: 4px double var(--brand-green);
-        outline: 2px solid var(--brand-gold);
-        outline-offset: -12px;
-        padding: 35px;
-        height: 100%;
-        position: relative;
-        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(244,248,245,0.5) 100%);
-    }
-
-    /* Watermark Background Logo */
-    .watermark {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 320px;
-        opacity: 0.05;
-        pointer-events: none;
-        z-index: 0;
-    }
-
-    .cert-content {
-        position: relative;
-        z-index: 1;
-    }
-
-    .cert-header img {
-        height: 75px;
-        width: auto;
-        border-radius: 6px;
-    }
-
-    .trust-title {
-        font-family: 'Cinzel', serif;
-        font-weight: 800;
-        color: var(--brand-green);
-        font-size: 1.8rem;
-        letter-spacing: 1px;
-    }
-
-    .trust-subtitle {
-        font-size: 0.85rem;
-        color: #555;
-        font-weight: 600;
-    }
-
-    .anniversary-badge {
-        background: linear-gradient(135deg, var(--brand-orange), #d6740b);
-        color: #fff;
-        font-size: 0.75rem;
-        font-weight: 700;
-        padding: 6px 14px;
-        border-radius: 20px;
-        display: inline-block;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        box-shadow: 0 2px 6px rgba(242, 139, 24, 0.3);
-    }
-
-    .cert-title {
-        font-family: 'Cinzel', serif;
-        color: var(--brand-gold);
-        font-weight: 700;
-        font-size: 2.1rem;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-top: 15px;
-        margin-bottom: 5px;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
-    }
-
-    .recipient-name {
-        font-family: 'Great Vibes', cursive;
-        font-size: 3.2rem;
-        color: var(--brand-green-dark);
-        border-bottom: 2px solid var(--brand-gold);
-        display: inline-block;
-        padding: 0 30px;
-        margin: 10px 0;
-        min-width: 300px;
-    }
-
-    .cert-body-text {
-        font-size: 1rem;
-        color: #444;
-        line-height: 1.6;
-        max-width: 750px;
-        margin: 0 auto;
-    }
-
-    .highlight-text {
-        color: var(--brand-green);
-        font-weight: 700;
-    }
-
-    .amount-badge {
-        background-color: var(--brand-green);
-        color: #ffffff;
-        padding: 3px 12px;
-        border-radius: 4px;
-        font-weight: 700;
-    }
-
-    /* Signature Area */
-    .sig-line {
-        width: 180px;
-        border-top: 1px solid #777;
-        margin: 0 auto 5px auto;
-    }
-
-    .sig-title {
-        font-size: 0.8rem;
-        font-weight: 600;
-        color: #555;
-    }
-
-    .cert-footer-text {
-        font-size: 0.75rem;
-        color: #777;
-        border-top: 1px solid #e0e0e0;
-        padding-top: 10px;
-    }
-
-    /* CRITICAL FIX: Removes browser headers/footers completely */
-    @page {
-        size: A4 landscape;
-        margin: 0 !important; /* Hides file path, date, and URLs */
-    }
-
-    @media print {
-        html, body {
-            width: 100%;
-            height: 100%;
-            margin: 0 !important;
-            padding: 0 !important;
-            background: #ffffff !important;
-            -webkit-print-color-adjust: exact !important;
-            print-color-adjust: exact !important;
+        :root {
+            --brand-green: #206d40;
+            --brand-green-dark: #184b2d;
+            --brand-orange: #f28b18;
+            --brand-gold: #d4af37;
+            --brand-dark: #1e2923;
         }
 
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f5;
+            color: var(--brand-dark);
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        /* Top Control Box for Quick Editing (Hidden in Print) */
         .editor-control-panel {
-            display: none !important;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 950px;
+            margin: 0 auto 30px auto;
+            border-left: 5px solid var(--brand-green);
         }
 
+        /* Certificate Main Wrapper */
         .certificate-container {
-            box-shadow: none !important;
-            border-radius: 0 !important;
-            width: 100vw !important;
-            height: 100vh !important;
-            padding: 15mm !important;
-            box-sizing: border-box !important;
+            width: 900px;
+            min-height: 630px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 25px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border-radius: 10px;
+            box-sizing: border-box;
         }
-    }
-</style>
+
+        /* Fancy Double Border Frame */
+        .certificate-border {
+            border: 4px double var(--brand-green);
+            outline: 2px solid var(--brand-gold);
+            outline-offset: -12px;
+            padding: 35px;
+            height: 100%;
+            position: relative;
+            background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(244,248,245,0.5) 100%);
+        }
+
+        /* Watermark Background Logo */
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 320px;
+            opacity: 0.05;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .cert-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cert-header img {
+            height: 75px;
+            width: auto;
+            border-radius: 6px;
+        }
+
+        .trust-title {
+            font-family: 'Cinzel', serif;
+            font-weight: 800;
+            color: var(--brand-green);
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+
+        .trust-subtitle {
+            font-size: 0.85rem;
+            color: #555;
+            font-weight: 600;
+        }
+
+        .anniversary-badge {
+            background: linear-gradient(135deg, var(--brand-orange), #d6740b);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 20px;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 6px rgba(242, 139, 24, 0.3);
+        }
+
+        .cert-title {
+            font-family: 'Cinzel', serif;
+            color: var(--brand-gold);
+            font-weight: 700;
+            font-size: 2.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .recipient-name {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.2rem;
+            color: var(--brand-green-dark);
+            border-bottom: 2px solid var(--brand-gold);
+            display: inline-block;
+            padding: 0 30px;
+            margin: 10px 0;
+            min-width: 300px;
+        }
+
+        .cert-body-text {
+            font-size: 1rem;
+            color: #444;
+            line-height: 1.6;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .highlight-text {
+            color: var(--brand-green);
+            font-weight: 700;
+        }
+
+        .amount-badge {
+            background-color: var(--brand-green);
+            color: #ffffff;
+            padding: 3px 12px;
+            border-radius: 4px;
+            font-weight: 700;
+        }
+
+        /* Signature Area */
+        .sig-line {
+            width: 180px;
+            border-top: 1px solid #777;
+            margin: 0 auto 5px auto;
+        }
+
+        .sig-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #555;
+        }
+
+        .cert-footer-text {
+            font-size: 0.75rem;
+            color: #777;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 10px;
+        }
+
+        /* CRITICAL PRINT FIX: Completely suppresses browser headers/footers */
+        @page {
+            size: A4 landscape;
+            margin: 0 !important;
+        }
+
+        @media print {
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0 !important;
+                padding: 0 !important;
+                background: #ffffff !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            .editor-control-panel {
+                display: none !important;
+            }
+
+            .certificate-container {
+                box-shadow: none !important;
+                border-radius: 0 !important;
+                width: 100vw !important;
+                height: 100vh !important;
+                padding: 15mm !important;
+                box-sizing: border-box !important;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -215,16 +215,20 @@
     <div class="container editor-control-panel">
         <h5 class="fw-bold text-success mb-3"><i class="fa-solid fa-pen-to-square me-2"></i>Customize Certificate Details</h5>
         <div class="row g-3">
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <label class="form-label small fw-semibold">Donor Name</label>
                 <input type="text" id="inputDonorName" class="form-control" value="Sri. Rajesh Shetty & Family" oninput="updateCert()">
             </div>
-            <div class="col-md-3">
-                <label class="form-label small fw-semibold">Support Category / Purpose</label>
-                <input type="text" id="inputPurpose" class="form-control" value="Student Scholarship Support" oninput="updateCert()">
+            <div class="col-md-4">
+                <label class="form-label small fw-semibold">Event / Occasion</label>
+                <input type="text" id="inputEvent" class="form-control" value="5th Year Anniversary & Independence Day Celebration (August 15, 2026)" oninput="updateCert()">
             </div>
             <div class="col-md-3">
-                <label class="form-label small fw-semibold">Contribution Amount (Optional)</label>
+                <label class="form-label small fw-semibold">Purpose of Support</label>
+                <input type="text" id="inputPurpose" class="form-control" value="Student Scholarship Support" oninput="updateCert()">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label small fw-semibold">Amount</label>
                 <input type="text" id="inputAmount" class="form-control" value="₹5,000" oninput="updateCert()">
             </div>
             <div class="col-md-2">
@@ -277,7 +281,7 @@
                 <!-- Body Content -->
                 <div class="cert-body-text mt-2">
                     In deep appreciation of your generous contribution towards our 
-                    <span class="highlight-text">5th Year Anniversary & Independence Day Celebration (August 15, 2026)</span>. 
+                    <span class="highlight-text" id="displayEvent">5th Year Anniversary & Independence Day Celebration (August 15, 2026)</span>. 
                     Your valuable donation of <span class="amount-badge" id="displayAmount">₹5,000</span> for 
                     <strong id="displayPurpose">Student Scholarship Support</strong> directly empowers underprivileged students in their pursuit of education and excellence.
                 </div>
@@ -321,6 +325,7 @@
     <script>
         function updateCert() {
             document.getElementById('displayDonorName').innerText = document.getElementById('inputDonorName').value || 'Honored Donor';
+            document.getElementById('displayEvent').innerText = document.getElementById('inputEvent').value || 'Our Cause & Event';
             document.getElementById('displayPurpose').innerText = document.getElementById('inputPurpose').value || 'Educational Support';
             document.getElementById('displayAmount').innerText = document.getElementById('inputAmount').value || 'Contribution';
             document.getElementById('displayDate').innerText = document.getElementById('inputDate').value || '15th August 2026';
